@@ -14,29 +14,13 @@
     <li><a href="#">Sci-Fi</a></li>
     <li><a href="#">Horror</a></li>
   </ul>
-</section>
+
 <section class="trending-now">
   <h2>Trending Now</h2>
   <div class="trending-now-container">
-    <div class="trending-now-item">
-      <a routerLink="/movie/1"> <img src="../assets/img.png" alt="Trending Now 1"></a>
-      <h3>Trending Now 1</h3>
-    </div>
-    <div class="trending-now-item">
-      <a routerLink="/movie/2"> <img src="../assets/img.png" alt="Trending Now 2"></a>
-      <h3>Trending Now 2</h3>
-    </div>
-    <div class="trending-now-item">
-      <a routerLink="/movie/3"><img src="../assets/img.png" alt="Trending Now 3"></a>
-      <h3>Trending Now 3</h3>
-    </div>
-    <div class="trending-now-item">
-      <a routerLink="/movie/4"> <img src="../assets/img.png" alt="Trending Now 4"></a>
-      <h3>Trending Now 4</h3>
-    </div>
-    <div class="trending-now-item">
-      <img src="../assets/img.png" alt="Trending Now 5">
-      <h3>Trending Now 5</h3>
+    <div class="trending-now-item" *ngFor="let movie of movies">
+      <a routerLink="/movie/{{movie.id}}"><img src="{{ movie.imageUrl }}" alt="Trending Now 1"></a>
+      <h3>{{movie.title}}</h3>
     </div>
   </div>
 </section>
