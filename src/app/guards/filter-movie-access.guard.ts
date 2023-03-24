@@ -14,7 +14,7 @@ export class FilterMovieAccessGuard implements CanActivate {
     const id = route.paramMap.get('id');
     if (id == "2") {
 
-      this.router.navigate(['2', 21])
+      this.router.navigate(['2'])
     } return true;
   }
 

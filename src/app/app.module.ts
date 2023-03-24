@@ -10,6 +10,7 @@ import { TvShowsComponent } from './tv-shows/tv-shows.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { MoviesService } from './services/movies.service';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { CategoriesService } from './services/categories.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [MoviesService],
+  providers: [MoviesService, CategoriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

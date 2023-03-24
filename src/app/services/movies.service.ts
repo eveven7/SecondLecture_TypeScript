@@ -7,6 +7,9 @@ import { moviesList } from '../shared/data';
 })
 export class MoviesService {
   getMovies() { return moviesList.movies; }
+  getMovie(id: string) {
+    return moviesList.movies.find((movie) => movie.id.toString() == id);
+  }
   getMoviesByCategory(id: string) {
     return moviesList.movies.filter((movie) => movie.categoryId.toString() == id);
   }
