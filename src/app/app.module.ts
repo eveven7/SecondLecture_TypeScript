@@ -9,6 +9,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { TvShowsComponent } from './tv-shows/tv-shows.component';
 import { MyListComponent } from './my-list/my-list.component';
 import { MoviesService } from './services/movies.service';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MoviesService } from './services/movies.service';
     CategoryComponent,
     NotfoundComponent,
     TvShowsComponent,
-    MyListComponent
+    MyListComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,13 +8,10 @@
 <section class="categories">
   <h2>Browse by Category</h2>
   <ul>
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Comedy</a></li>
-    <li><a href="#">Drama</a></li>
-    <li><a href="#">Sci-Fi</a></li>
-    <li><a href="#">Horror</a></li>
-  </ul>
+    <li *ngFor="let cat of categories"><a routerLink="/cat/{{cat.id}}">{{ cat.title }}</a></li>
 
+  </ul>
+</section>
 <section class="trending-now">
   <h2>Trending Now</h2>
   <div class="trending-now-container">
